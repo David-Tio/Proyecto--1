@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Una página web para compartir mis gustos musicales, artistas favoritos, y más.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="./assets/icons/spotify.ico">
+<title>Mi Spotify</title>
+</head>
+<body>
+  <header>
+    <h1>
+      Mi Spotify
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.669 11.538a.5.5 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686m.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858m.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288"/>
+      </svg>
+    </h1>
+
+   
+  <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="artistasfavoritos.html">Mis artistas favoritos</a></li>
+        <li><a href="cancionesfavoritas.html">Mis canciones favoritas</a></li>
+      </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Bienvenido a mi Spotify</h2>
+      <p>Hola, bienvenido a mi Spotify, una página web para compartir mis gustos musicales, artistas favoritos, y más.</p>
+    
+
+    <section class="que-es-spotify">
+      <h2>¿Qué es Spotify?</h2>
+      <p>Spotify es un servicio de música en streaming que permite a los usuarios escuchar una amplia variedad de canciones, álbumes y listas de reproducción a través de una plataforma digital.</p>
+      <p>Los usuarios pueden crear listas de reproducción, seguir a otros usuarios y descubrir nueva música con recomendaciones personalizadas. Spotify ofrece música sin conexión, podcasts y contenido exclusivo con su modelo freemium (con anuncios) o premium (sin anuncios y con modosin internet).</p>
+    </section>
+
+    <h2>Secciones</h2>
+    <ul>
+    <li><a href="artistasfavoritos.html">Mis artistas favoritos</a></li>
+    <li><a href="cancionesfavoritas.html">Mis Canciones Favoritas</a></li>
+    </ul>
+  </main>
+  <section class="Informacion-personal">
+    <h2>Información personal</h2>
+    <p>Mi nombre es David Tío, tengo 17 años y soy de España. Me encanta la música y disfruto compartiendo mis gustos musicales con los demás.</p>
+    <p>En esta página encontrarás mis artistas y canciones favoritas de dichos artistas, así como información sobre Spotify y por qué lo utilizo.</p>
+    <p>Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de las redes sociales o por correo electrónico.</p>
+    
+     
+      <section class="portfolio">
+         <h3>Portfolio</h3>
+        <div class="grid-container">
+        <article>
+          <h4>Meulify</h4>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAdVBMVEUREREe12ARAA0e22IQAAoQAAAf32MRDxAQAAcQAAQRDRARCg8f42Udy1se1F8dzlwVXSwbs1ESNBwXgTsZl0UapEoaqk0dxFgSHBQSMBsYiT4cu1QTPyETRSMTSiUYj0ERFxESJRcUUygXeTgWbzMVYy8VaTEcFaKJAAACT0lEQVRoge2YbZuqIBCGiUFAfC1Nt+zUbub5/z/xDNoi7cvZI8Z1vvB8yezy9mEYZiBCgoKCgoKCgoL+h4RQSaKEeD6YMSnZy+5A9GfyXLQ8H7cFT1HQNv0uos/yj+gq4wCbSQAcuvJJeMoqxG0eBGlWxmo9W54yvvks4A2jK9Eirj66Nvj8F1vHjur0a/QY/FKugcf1VyEx4uUK73H1ve/J/Mk57vT8V99j3KVjzihVfDOXFn0fu8Hl5SfjOuxnp8Co1x8CPllvIyfjtR0Uvejh4eKu9OyQMSopbHR37I8dx4tt1V9aK17QOESdljOBt6eIURZdoTuMF2U+m89flyeM3JvnoYunWaNvdCzlgr3l85vLxVMqZGvgnCCSSmQogT/E+I3dzLigXhx0weandS6zYX/TlUTQutklWHTmn7eLK0xyMInIe0roNYX0RnW0OBSYfVFnmkcml/YNpBn4QAk2DByBJCLJ8AZat6YkZ4vhgxm3njFWYRpuY6JIocvVAxzWw2GEC4XOYbcWboVFw3sLzg8rw2JNaHrVcD6uxcn5A9xhQq1U5Bji0bkNZ6byOKSitYgKoQg73p1TvK3hdHgfmcMimscNv/HhqNHOIyxn2jm2TsEacF7+c+GCiGGl0qSCslh3PsheYhYNd7hL4TIlF9qqmlxC2x/HggV5XV3upcup5M7NAuC9O8zbuvnKqVn4bXNeG7TfrYXXTZHf7ZzfjajfLbTXzT/xemwhfg9c4wHX21GReD3kTnhvx/P7C3z9sRAUFBQUFBQU9C/6A65eIMwkddvcAAAAAElFTkSuQmCC" alt="Meulify"></article>
+        <article><h4>Mi Spotify</h4><img src="./assets/imagenes/mi_spotify.png" alt="Mi spotify Logo"> </article>
+        <article><h4>Bar Altozano</h4><img src="./assets/imagenes/altozano.jpeg" alt="Imagen del Bar Altozano"><p>Próximamente</p></article>
+        <article><h4>Piscinas Cespedosa de Tormes</h4><img src="./assets/imagenes/piscinas_cespedosa_de_tormes.jpeg" alt="Piscinas Cespedosa de Tormes"><p>Próximamente</p></article>
+        </div>
+
+    </section>
+    
+    <section class="el-porque-la-musica-y-no-las-peliculas-o-series">
+      <h3>¿Por qué la música y no las películas o series?</h3>
+      <p>La música es una forma de expresión que me permite conectar con mis emociones y experiencias de una manera única. A diferencia de las películas o series, la música puede acompañarme en cualquier momento del día, ya sea para animarme, relajarme o reflexionar. La musica ha sido una de las pocas cosas que pudo haberme curado e momentos de caida emocional y demas. Ha sido una de las pocas cosas que me ha ayudado a levantar la cabeza en momentos dificiles.</p>
+      <p>Además, la música tiene el poder de evocar recuerdos y sentimientos profundos, lo que la convierte en una parte esencial de mi vida diaria. Soy la tipica pwersona la cual cuando va por la calle casi siempre lleva un auricular escuchando musica.</p>
+    </section>
+    <section class="contacto">
+      <h3>Contacto</h3>
+      <p>Si deseas contactarme, puedes hacerlo a través de mi correo electrónico: <a href="mailto:hp.15sq100.es@gmail.com">Mail</a></p>
+      <p>También puedes seguirme en mis redes sociales:</p>
+      <ul>
+        <li><a href="https://www.instagram.com/eltio_cdt/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@eltiocdt" target="_blank">TikTok</a></li>
+      </ul>
+    
+  </section>
+  </section>
+
+  
+  
+  <footer>
+    <p>Mi Spotify no está asociado con Spotify oficial.</p>
+    <p>Creado por David Tío &copy; 2025</p>
+    <p>Contacto: <a href="mailto:hp.15sq100.es@gmail.com">Gmail</a></p>
+    <p>Redes sociales: <a href="https://www.instagram.com/eltio_cdt/" target="_blank">Instagram</a> | <a href="https://www.tiktok.com/@eltiocdt" target="_blank">TikTok</a></p>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,855 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: lightblue;
+    justify-content: center;
+    }
+:root{
+    --main-color: rgba(0, 133, 7, 0.824);
+    --secondary-color: black;
+    --third-color: lightblue;
+    --fourth-color: lightgreen;
+    --fifth-color: gray;
+    --sixth-color: aqua;
+    --seventh-color: lightpink;
+
+}
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: none; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.582);
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: darkgreen;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  height: auto;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.logo-and-title h2 {
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  font-size: clamp(24px, 5vw, 48px);
+  margin: 0;
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
+
+header h2:hover {
+  color: var(--third-color);
+  transition: color 0.3s ease;
+}
+
+.logo-and-title svg {
+  width: 50px;
+  height: 50px;
+}
+
+.home-icon svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--secondary-color);
+  transition: fill 0.3s ease;
+
+}
+
+.home-icon svg:hover {
+  fill: var(--third-color);
+}
+
+header nav {
+  display: none;
+}
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  header h2 {
+    grid-column: 1;
+    font-size: 28px;
+  }
+
+  header nav {
+    justify-content: center;
+    color: white;
+  }
+
+  header nav a svg {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  header h2 {
+    grid-column: 1;
+    font-size: 28px;
+  }
+
+  header nav {
+    grid-column: 1;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  header nav a svg {
+    width: 32px;
+    height: 32px;
+    margin: 0 5px;
+  }
+}
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main p{
+  margin-bottom: 12px;
+  line-height: 1;
+  color: var(--secondary-color);
+
+}
+h2{
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.David-Guetta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-color);
+  padding: 20px;
+}
+.David-Guetta h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+.David-Guetta img{
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.David-Guetta p{
+  text-align: center;
+  max-width: 800px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  inline-size: auto;
+}
+.David-Guetta-info img{
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  align-items: center;
+  width: auto;
+  height: auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.David-Guetta-info p{
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+}
+h1{
+  width: 400px;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+a{
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+a > img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.Discografía article{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.albumes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+img{
+  width: auto;
+  height: auto;
+  Border-radius: 20px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left:auto ;
+  margin-right: auto;
+  align-items: center;
+}
+
+.albumes-david-guetta {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.albumes-david-guetta h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color : var(--fourth-color);
+}
+
+.Discografía {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  max-width: 1200px; 
+  margin: 0 auto;    
+}
+
+.Discografía h2 {
+  text-align: center;
+  font-size: 40px;
+  border-radius: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.Discografía article {
+  flex: 1 1 200px;
+  max-width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.Discografía article:hover {
+  transform: scale(1.05); 
+}
+
+.Discografía img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.Discografía h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.Discografía p {
+  color: gray;
+  font-size: 14px;
+}
+.Colaboraciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Colaboraciones h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 0;
+}
+.Colaboraciones h3{
+  font-size: 18px;
+  background-color:gray;
+  border-radius: 10px;
+  
+}
+.Colaboraciones p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+}
+.Colaboraciones img {
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Canciones-de-Colaboraciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Canciones-de-Colaboraciones article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Canciones-de-Colaboraciones article:hover {
+  transform: scale(1.05);
+}
+.Canciones-de-Colaboraciones img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Canciones-de-Colaboraciones h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: brown;
+  border-radius: 10px;
+}
+.Canciones-de-Colaboraciones audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.Just-a-Little-more-love {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.Just-a-Little-more-love h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: grey;
+  border-radius: 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.Just-a-Little-more-love p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+
+}
+.Just-a-Little-more-love img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Canciones-del-album-JALML {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+
+.Canciones-del-album-JALML article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.Canciones-del-album-JALML article:hover {
+  transform: scale(1.05);
+}
+.Canciones-del-album-JALML h2,
+.Canciones-del-album-NBTBUE h2,
+.Canciones-del-album-Listen h2,
+.Canciones-del-album-Listen-Again h2,
+.Canciones-del-album-7, h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.Canciones-del-album-JALML img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.Canciones-del-album-JALML h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Canciones-del-album-JALML audio{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Nothing-but-the-beat-Ultimate-Edition{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Nothing-but-the-beat-Ultimate-Edition h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 0;
+}
+.Nothing-but-the-beat-Ultimate-Edition img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Nothing-but-the-beat-Ultimate-Edition p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  justify-content: center;
+}
+.Canciones-del-album-NBTBUE {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Canciones-del-album-NBTBUE article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Canciones-del-album-NBTBUE article:hover {
+  transform: scale(1.05);
+}
+.Canciones-del-album-NBTBUE img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Canciones-del-album-NBTBUE h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+}
+.Canciones-del-album-NBTBUE audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Listen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Listen h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 0;
+}
+.Listen img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Listen p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Canciones-del-album-Listen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Canciones-del-album-Listen article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Canciones-del-album-Listen article:hover {
+  transform: scale(1.05);
+}
+.Canciones-del-album-Listen img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Canciones-del-album-Listen h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+}
+.Canciones-del-album-Listen h3{
+  font-family: 'Times New Roman', Times, serif;
+}
+.Canciones-del-album-Listen audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Listen-again{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Listen-again h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 0;
+}
+.Listen-again img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Listen-again p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+}
+.Canciones-del-album-Listen-Again {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Canciones-del-album-Listen-Again article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Canciones-del-album-Listen-Again article:hover {
+  transform: scale(1.05);
+}
+.Canciones-del-album-Listen-Again img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Canciones-del-album-Listen-Again h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.Canciones-del-album-Listen-Again h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+}
+.Canciones-del-album-Listen-Again audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+.Album-7{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Album-7 h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 15px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.Album-7 img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Album-7 p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+}
+.Canciones-del-Album-7 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Canciones-del-Album-7 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Canciones-del-Album-7 h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: gray;
+  border-radius: 10px;
+}
+.Canciones-del-Album-7 article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Canciones-del-Album-7 article:hover {
+  transform: scale(1.05);
+}
+.Canciones-del-Album-7 audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+footer {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+footer p {
+    margin: 0;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+  }
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.David-Guetta img {
+  width: 65%;
+  max-width: 600px;
+  height: auto;
+}
+
+
+.Nothing-but-the-beat-Ultimate-Edition img,
+.Just-a-Little-more-love img,
+.Listen img,
+.Listen-again img,
+.Album-7 img {
+  width: 65%;
+  max-width: 400px;
+  height: auto;
+}
+.Singles-y-Colaboraciones{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Singles-y-Colaboraciones h2 {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  border-radius: 20px;
+  margin: 0;
+}
+.Singles-y-Colaboraciones p {
+  margin-top: 20px;
+  text-align: center;
+  max-width: 800px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Singles-y-Colaboraciones img {
+  width: 65%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.Singles-y-Colaboraciones article {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+.Singles-y-Colaboraciones article:hover {
+  transform: scale(1.05);
+}
+.Singles-y-Colaboraciones img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.Singles-y-Colaboraciones h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+}
+.Singles-y-Colaboraciones audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.Singles-y-Colaboraciones audio:hover {
+  background-color: var(--fourth-color);
+  transition: background-color 0.3s ease;
+}
+.Canciones-de-Singles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.cancion-card {
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.cancion-card:hover {
+  transform: scale(1.05);
+}
+
+.cancion-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cancion-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+  background: darkgrey;
+  border-radius: 10px;
+}
+
+.cancion-card audio {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,1233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: rgba(0, 133, 7, 0.824);
+    --secondary-color: black;
+    --third-color: #f0f0f0;
+    --fourth-color: #e0e0e0;
+    --fifth-color: grey;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    padding: 0px;
+    background-color: aqua;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+main section {
+    max-width: 800px;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-color: aquamarine;
+    color: #000;
+}
+
+header {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin: 0;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+svg{
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+header nav .nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+div .home-icon-container{
+    display: block;
+    align-items: right;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+}
+.bg-title {
+    display: inline-block; 
+    background-color: var(--third-color); 
+    padding: 8px 16px;
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+}
+
+
+main .rihanna h2.bg-title {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 20px;
+}
+.menu-toggle {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+main > h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+
+
+
+.home-icon-container svg { 
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 20px;
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+section > img,
+section img {
+    max-width: 400px;
+}
+
+p {
+    margin-left: auto + (15px);
+    margin-right: auto + (15px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.discografia {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: auto;
+}
+
+.discografia h2 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-color);
+    margin-top: 10px;
+}
+
+.discografia article {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    align-items: center;
+    margin: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.discografia article:hover {
+    transform: scale(1.05);
+}
+
+.discografia h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+}
+
+.album-title-detail {
+    background-color: var(--fifth-color);
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.discografia h2,
+.album-good-girl-gone-bad h2,
+.album-loud h2,
+.album-talk-that-talk h2,
+.album-unapologetic h2,
+.colaboraciones h2 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--secondary-color);
+    margin-top: 20px;
+}
+
+.canciones-album-music-of-the-sun h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.album-music-of-the-sun {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.album-music-of-the-sun article {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.album-music-of-the-sun img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    scroll-behavior: auto;
+    scroll-margin-inline: 20px;
+}
+
+
+.album-music-of-the-sun h3 {
+    text-align: center;
+    color: var(red);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--fifth-color);
+}
+
+.album-music-of-the-sun p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.canciones-album-music-of-the-sun h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-album-music-of-the-sun {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.canciones-album-music-of-the-sun h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.canciones-album-music-of-the-sun img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-music-of-the-sun img:hover {
+    transform: scale(1.05);
+}
+
+.canciones-album-music-of-the-sun article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-music-of-the-sun audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.album-good-girl-gone-bad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.album-good-girl-gone-bad h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.album-good-girl-gone-bad img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-good-girl-gone-bad p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.canciones-album-good-girl-gone-bad h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-album-good-girl-gone-bad {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.canciones-album-good-girl-gone-bad h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.canciones-album-good-girl-gone-bad img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-good-girl-gone-bad img:hover {
+    transform: scale(1.05);
+}
+
+.canciones-album-good-girl-gone-bad article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-good-girl-gone-bad:hover article {
+    transform: scale(1.05);
+}
+
+.canciones-album-good-girl-gone-bad audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.album-loud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.album-loud h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.album-loud img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-loud p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.canciones-album-loud h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-album-loud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.canciones-album-loud h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.canciones-album-loud img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-loud img:hover {
+    transform: scale(1.05);
+}
+
+.canciones-album-loud article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-loud:hover article {
+    transform: scale(1.05);
+}
+
+.canciones-album-loud audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.album-talk-that-talk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.album-talk-that-talk h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.album-talk-that-talk img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-talk-that-talk p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.canciones-album-talk-that-talk h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-album-talk-that-talk {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.canciones-album-talk-that-talk h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.canciones-album-talk-that-talk img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-talk-that-talk img:hover {
+    transform: scale(1.05);
+}
+
+.canciones-album-talk-that-talk article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-talk-that-talk:hover article {
+    transform: scale(1.05);
+}
+
+.canciones-album-talk-that-talk audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.album-unapologetic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.album-unapologetic h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.album-unapologetic img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.album-unapologetic p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.canciones-album-unapologetic h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-album-unapologetic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+
+.canciones-album-unapologetic h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.canciones-album-unapologetic img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-unapologetic img:hover {
+    transform: scale(1.05);
+}
+
+.canciones-album-unapologetic article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.canciones-album-unapologetic:hover article {
+    transform: scale(1.05);
+}
+
+.canciones-album-unapologetic audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+
+.colaboraciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+.canciones-colaboraciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+.caqnciones-colaboraciones article{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+    
+}
+.colaboraciones h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.colaboraciones img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.colaboraciones p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.colaboraciones-eminem h4 {
+    flex: 0 0 auto;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: auto;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.canciones-colaboraciones h3 {
+    flex: 0 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.canciones-colaboraciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+.colaboraciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+.colaboraciones img{
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.colaboraciones article{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+.colaboraciones p{
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.colaboraciones h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+.colaboraciones h3{
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: violet;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.colaboraciones audio{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+.canciones-colaboraciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding: 20px;
+}
+.canciones-colaboraciones h4 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--fifth-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.canciones-colaboraciones img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.canciones-colaboraciones article{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.canciones-colaboraciones:hover article {
+    transform: scale(1.05);
+}
+.canciones-colaboraciones audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: var(--secondary-color);
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: var(--main-color);
+        width: 100%;
+    }
+    nav ul.active {
+        display: flex;
+    }
+}
+
+footer {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: none;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--third-color);
+}
+
+button#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+}
+
+button#scrollToTopBtn:hover {
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 0px;
+    }
+    header {
+        padding: 0px;
+    }
+    main {
+        padding: 10px;
+    }
+    .discografia article {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .discografia {
+        grid-template-columns: 1fr;
+    }
+    .menu-toggle {
+        right: 10px;
+        top: 10px;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+nav {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}

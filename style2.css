@@ -1,0 +1,475 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: rgba(0, 133, 7, 0.824);
+  --secondary-color: black;
+  --third-color: lightblue;
+  --fourth-color: grey;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-and-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+header h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  color: var(--secondary-color);
+  margin: 0;
+}
+svg{
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+}
+header nav .nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+header nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+img{
+  max-width: 100%;
+  height: 240px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+div.Biografia-JuanMagan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Biografia-JuanMagan img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.albumes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.albumes article {
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.albumes article:hover {
+  transform: scale(1.05);
+}
+
+.albumes img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.Discografia {
+  padding: 20px;
+}
+.Discografia article{
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+.Discografia article:hover {
+  transform: scale(1.05);
+}
+.Discografia article h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+}
+.info-the-king-of-dance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.info-the-king-of-dance img{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.canciones-del-album-TKOFD {
+    padding: 20px;
+}
+
+.canciones-del-album-TKOFD h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.canciones-del-album-TKOFD .songs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.canciones-del-album-TKOFD article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.canciones-del-album-TKOFD article:hover {
+  transform: scale(1.05);
+}
+.canciones-del-album-TKOFD img{
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.canciones-del-album-TKOFD audio{
+  width: 250px;
+  margin-top: 10px;
+}
+.canciones-del-album-TKOFD h4{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+}
+.info-the-king-is-back-latinibizate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.info-the-king-is-back-latinibizate img{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.canciones-del-album-TKIB{
+  padding: 20px;
+}
+.canciones-del-album-TKIB article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    padding: 16px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.canciones-del-album-TKIB article:hover {
+  transform: scale(1.1);
+}
+.canciones-del-album-TKIB img{
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.canciones-del-album-TKIB h4{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+}
+.canciones-del-album-QQS h3{
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.canciones-del-album-TKIB audio{
+  width: 250px;
+  margin-top: 10px;
+}
+.info-quiero-que-sepas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.info-quiero-que-sepas img{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.canciones-del-album-QQS{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.canciones-del-album-QQS h3{
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.canciones-del-album-QQS article{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s ease;
+}
+.canciones-del-album-QQS article:hover {
+  transform: scale(1.1);
+}
+.canciones-del-album-QQS img{
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.canciones-del-album-QQS h4{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+}
+.canciones-del-album-QQS audio{
+  width: 250px;
+  margin-top: 10px;
+}
+.info-album-4_0{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.info-album-4_0 img{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.info-album-4_0 p{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.canciones-del-album-4_0{
+  gap: 20px;
+  align-items: center;
+}
+.canciones-del-album-4_0 article{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+.canciones-del-album-4_0 article:hover {
+  transform: scale(1.1);
+}
+.canciones-del-album-4_0 img{
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.canciones-del-album-4_0 h3{
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.canciones-del-album-4_0 h4{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+}
+.canciones-del-album-4_0 audio{
+  width: 250px;
+  margin-top: 10px;
+  align-items: center;
+}
+.canciones-del-album-4_0 p{
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.Singles-Canciones{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Singles-Canciones article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s ease;
+}
+.Singles-Canciones img{
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.songs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer {
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  display: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.582);
+  transition: background-color 0.3s ease;
+}
